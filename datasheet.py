@@ -41,7 +41,8 @@ print("\nNew columns added:")
 print(df[["OrderYear", "OrderMonth", "OrderDayOfWeek",
           "AvgItemPrice", "HasCoupon", "CartUtilization"]].head())
 
-categorical_cols = ["PaymentMethod", "OrderStatus", "ReferralSource"]
+categorical_cols = ["PaymentMethod", "OrderStatus", "ReferralSource
+
 
 df_encoded = pd.get_dummies(df, columns=categorical_cols)
 
